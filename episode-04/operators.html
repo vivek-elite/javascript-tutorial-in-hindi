@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Episode 5 - Operators</title>
+        <script>
+            function mathsOperators() {
+                var num1 = 10;
+                var num2 = 5;
+                document.write("<h2>Arithmetic Operators</h2>");
+                document.write("<strong>num1 = " + num1 + ", num2 = " + num2 + "</strong><br>");
+                result = num1 + num2;
+                document.write("Sum of the two numbers " + num1 + " and " + num2 +" = " + result + "<br>");
+                result = num1 - num2;
+                document.write("Difference of the two numbers " + num1 + " and " + num2 + " = " + result + "<br>");
+                result = num1 * num2;
+                document.write(num1 + " * " + num2 + " = " + result + "<br>");
+                result = num1 / num2;
+                document.write("num1 / num2 = " + result + "<br>");
+                result = num1 % num2;
+                document.write("num1 % num2 = " + result + "<br>");
+            }
+            function stringOperators() {
+                document.write("<h2>String Operators</h2>");                
+                var string1 = "Pankaj ";
+                var string2 ="Mishra";
+                document.write("<strong>string1 = " + string1 + ", string2 = " + string2 + "</strong><br>");
+                result = string1 + string2;
+                document.write("string1 + string2 = " + result + "<br>");
+            }
+            function comparisonOperators() {
+                document.write("<h2>Comparison Operators</h2>");
+                var num1 = 10;
+                var num2 = 4;
+                document.write("<strong>num1 = " + num1 + ", num2 = " + num2 + "</strong><br>");                
+                result = num1 == num2;
+                document.write("num1 == num2 : " + result + "<br>");
+                result = num1 === num2;
+                document.write("num1 === num2 : " + result + "<br>");
+                result = num1 != num2;
+                document.write("num1 != num2 : " + result + "<br>");
+                result = num1 !== num2;
+                document.write("num1 !== num2 : " + result + "<br>");
+
+                var num1 = 10;
+                var num2 = "10";
+                document.write("<br><strong>num1 = " + num1 + ", num2 = \"" + num2 + "\"</strong><br>");                
+                result = num1 == num2;
+                document.write("num1 == num2 : " + result + "<br>");
+                result = num1 === num2;
+                document.write("num1 === num2 : " + result + "<br>");
+                result = num1 != num2;
+                document.write("num1 != num2 : " + result + "<br>");
+                result = num1 !== num2;
+                document.write("num1 !== num2 : " + result + "<br>");
+
+                var num1 = 10;
+                var num2 = 4;
+                document.write("<br><strong>num1 = " + num1 + ", num2 = " + num2 + "</strong><br>");
+                result = num1 > num2;
+                document.write("num1 > num2 : " + result + "<br>");
+                result = num1 >= num2;
+                document.write("num1 >= num2 : " + result + "<br>");                
+                result = num1 < num2;
+                document.write("num1 < num2 : " + result + "<br>");
+                result = num1 <= num2;
+                document.write("num1 <= num2 : " + result + "<br>");                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Operators</h1>
+        <script>
+            mathsOperators();
+            stringOperators();
+            comparisonOperators();
+        </script>
+    </body>
+</html>

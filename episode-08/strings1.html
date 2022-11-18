@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings in JavaScript</title>
+  </head>
+  <body>
+    <button>Press me</button>
+
+    <script>
+      // DOUBLE AND SINGLE QUOTES
+      const sglDbl = 'Would you eat a "fish supper"?';
+      const dblSgl = "I'm feeling blue.";
+      console.log(sglDbl);
+      console.log(dblSgl);
+
+      // STRING TEMPLATES
+      const name = "Ajay";
+      // Regular way
+      const greeting1 = "Hello, " + name;
+      // String template way
+      const greeting2 = `Hello, ${name}`;
+      console.log(greeting1); // "Hello, Ajay"
+      console.log(greeting2); // "Hello, Ajay"
+
+      // ANOTHER STRING TEMPLATE EXAMPLE
+
+      const one = "Hello, ";
+      const two = "how are you?";
+      const joined = `${one}${two}`;
+      console.log(joined); // "Hello, how are you?"
+
+      // CONCATENATION IN CONTEXT
+      const button = document.querySelector("button");
+
+      function greet() {
+        const name = prompt("What is your name?");
+        alert(`Hello ${name}, nice to see you!`);
+      }
+
+      button.addEventListener("click", greet);
+
+      // STRING TO NUMBER AND VICE VERSA
+      const myString = "123";
+      const myNum = Number(myString);
+      console.log(typeof myNum);
+
+      const myNum2 = 123;
+      const myString2 = myNum2.toString();
+      console.log(typeof myString2);
+
+      // EPXRESSSIONS IN STRINGS
+      const song = "Fight the Youth";
+      const score = 9;
+      const highestScore = 10;
+      const output = `I like the song ${song}. I gave it a score of ${
+        (score / highestScore) * 100
+      }%.`;
+      console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
+
+      // MULTILINE OUTPUT
+      // With Template Strings
+      const output1 = `I like the song.
+I gave it a score of 90%.`;
+      console.log(output1);
+
+      // With Normal String
+      const output2 = "I like the song.\nI gave it a score of 90%.";
+      console.log(output2);
+    </script>
+  </body>
+</html>

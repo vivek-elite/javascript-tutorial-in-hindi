@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        firstName: "Anil",
+        lastName: "Gupta",
+        age: 50,
+        eyeColor: "blue",
+      };
+
+      person.firstName = "Pankaj";
+      console.log(person.firstName);
+
+      // Create an empty object and then add properties
+      // const person = {};
+      // person.firstName = "Anil";
+      // person.lastName = "Gupta";
+      // person.age = 50;
+      // person.eyeColor = "blue";
+
+      // Objects are passed by reference
+      const x = person;
+      x.age = 10;
+    </script>
+  </body>
+</html>

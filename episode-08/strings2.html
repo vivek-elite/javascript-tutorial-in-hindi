@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      const browserType = "Mozilla";
+      console.log(browserType.length);
+      console.log(browserType[2]);
+      console.log(browserType[browserType.length - 1]);
+
+      // Testing for a substring
+      if (browserType.includes("zilla")) {
+        console.log("Found zilla!");
+      } else {
+        console.log("No zilla here!");
+      }
+
+      if (browserType.startsWith("zilla")) {
+        console.log("Starts with zilla!");
+      } else {
+        console.log("Does not start with zilla!");
+      }
+
+      if (browserType.endsWith("zilla")) {
+        console.log("Ends with zilla!");
+      } else {
+        console.log("Does not end with zilla!");
+      }
+
+      // Extracting substring
+      console.log(browserType.slice(1, 4)); // "ozi"
+
+      console.log(browserType.slice(2)); // "zilla"
+
+      // Changing case
+      const radData = "My NaMe Is SaChin";
+      console.log(radData.toLowerCase());
+      console.log(radData.toUpperCase());
+
+      // Replacing parts of a string
+      const updated = browserType.replace("Moz", "Van");
+      console.log(updated); // "Vanilla"
+      console.log(browserType); // "Mozilla"
+    </script>
+  </body>
+</html>

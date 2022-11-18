@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Arrays</title>
+  </head>
+  <body>
+    <script>
+      let car1 = "Saab";
+      let car2 = "Volvo";
+      let car3 = "BMW";
+
+      const cars = ["Saab", "Volvo", "BMW"];
+      let car = cars[0];
+      // Accessing array element
+      console.log(car);
+
+      // Changing array element
+      cars[1] = "Tiago";
+
+      document.getElementById("demo").innerHTML = cars;
+
+      // Way 2
+      //   const cars = [];
+      //   cars[0] = "Saab";
+      //   cars[1] = "Volvo";
+      //   cars[2] = "BMW";
+
+      // Way 3
+      // const cars = new Array("Saab", "Volvo", "BMW");
+
+      cars.length; // Returns the number of elements
+      cars.sort(); // Sorts the array
+
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let fruit = fruits[0];
+
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let fruit = fruits[fruits.length - 1];
+
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let fLen = fruits.length;
+
+      let text = "<ul>";
+      for (let i = 0; i < fLen; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+      }
+      text += "</ul>";
+
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+      let text = "<ul>";
+      fruits.forEach(myFunction);
+      text += "</ul>";
+
+      function myFunction(value) {
+        text += "<li>" + value + "</li>";
+      }
+
+      const fruits = ["Banana", "Orange", "Apple"];
+      fruits.push("Lemon"); // Adds a new element (Lemon) to fruits
+
+      const fruits = ["Banana", "Orange", "Apple"];
+      fruits[fruits.length] = "Lemon"; // Adds "Lemon" to fruits
+    </script>
+  </body>
+</html>

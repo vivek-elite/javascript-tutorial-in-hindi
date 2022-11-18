@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Trimming a string
+      let name = " Pankaj";
+      let greeting = "      Hello!      ";
+      let text1 = greeting + name;
+      console.log(text1);
+      let text2 = greeting.trim() + name;
+      console.log(text2);
+
+      // Converting to Array
+      const fullname = "Pankaj Saxena";
+      let namearr = fullname.split(" ");
+      console.log(namearr);
+      console.log(`Firstname: ${namearr[0]}, Lastname: ${namearr[1]}`);
+    </script>
+  </body>
+</html>
